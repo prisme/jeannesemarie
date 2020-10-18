@@ -36,9 +36,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-shopify'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+
+  env: {
+    SHOPIFY_DOMAIN: process.env.SHOPIFY_DOMAIN, 
+    SHOPIFY_ACCESS_TOKEN: process.env.SHOPIFY_ACCESS_TOKEN
+  },
+  
 }
