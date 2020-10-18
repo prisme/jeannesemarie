@@ -1,0 +1,702 @@
+{
+  "Page": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "unique-identifier-eg-homepage"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "config": {
+        "choices": {
+          "alternate_grid": {
+            "type": "Slice",
+            "fieldset": "AlternateGrid",
+            "description": "A predesigned Text Grid with Image left or right",
+            "icon": "wrap_text",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "multi": "paragraph, preformatted, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "title",
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "description",
+                  "multi": "paragraph, preformatted, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              },
+              "optional_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Optional image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "image_side": {
+                "type": "Select",
+                "config": {
+                  "label": "Image side",
+                  "default_value": "left",
+                  "options": [
+                    "left",
+                    "right"
+                  ]
+                }
+              }
+            },
+            "repeat": {
+              "optional_icon": {
+                "type": "Image",
+                "config": {
+                  "label": "Optional Icon",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "title",
+                  "single": "heading3"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "description",
+                  "multi": "paragraph, preformatted, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              }
+            }
+          },
+          "call_to_action": {
+            "type": "Slice",
+            "fieldset": "Call to action",
+            "description": "A predesigned 'Call to action' for section for your site",
+            "icon": "notifications_active",
+            "display": "list",
+            "non-repeat": {
+              "icon_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Icon Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6"
+                }
+              },
+              "paragraph": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Paragraph",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item"
+                }
+              },
+              "button_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link"
+                }
+              },
+              "button_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Label",
+                  "placeholder": "Text for button"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "cards_carousel": {
+            "type": "Slice",
+            "fieldset": "Cards Carousel",
+            "description": "A carousel with text + image cards",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "single": "heading3"
+                }
+              },
+              "content": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Content",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              },
+              "additional_info": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Additional Info",
+                  "placeholder": "eg. name of person in testimonial",
+                  "multi": "paragraph, preformatted, heading3, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              }
+            }
+          },
+          "customer_logos": {
+            "type": "Slice",
+            "fieldset": "Customer logos",
+            "description": "Display a list of your customers logos",
+            "icon": "person",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow Headline",
+                  "placeholder": "Trusted by",
+                  "single": "heading2"
+                }
+              },
+              "call_to_action": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Call To Action",
+                  "placeholder": "View customer stories",
+                  "single": "paragraph"
+                }
+              },
+              "call_to_action_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Call to Action Link",
+                  "placeholder": "Could be a signup link, or a link to customer stories",
+                  "allowTargetBlank": true
+                }
+              }
+            },
+            "repeat": {
+              "logo": {
+                "type": "Image",
+                "config": {
+                  "label": "Logo",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "Could be a link to use case, press article, signup...",
+                  "allowTargetBlank": true
+                }
+              }
+            }
+          },
+          "faq_section": {
+            "type": "Slice",
+            "fieldset": "FAQ",
+            "description": "List of common questions + answers",
+            "icon": "question_answer",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "placeholder": "Reinforce your copy with a key-worded text, to be displayed before title",
+                  "single": "paragraph"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "title",
+                  "placeholder": "Title",
+                  "single": "heading2"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true
+                }
+              },
+              "optional_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Optional image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            },
+            "repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Which browsers do you support?",
+                  "single": "heading3"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Text",
+                  "placeholder": "The answer to the question",
+                  "multi": "paragraph, preformatted, strong, em, hyperlink, list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              }
+            }
+          },
+          "feature_testimonials": {
+            "type": "Slice",
+            "fieldset": "Feature Testimonials",
+            "description": "Testimonial proving the value of a specific feature",
+            "icon": "ondemand_video",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "placeholder": "Reinforce your copy with a key-worded text, to be displayed before title",
+                  "single": "paragraph"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Our testimonial",
+                  "single": "heading2"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "These are some awesome tutorials from our awesome clients ...",
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true
+                }
+              },
+              "feature_illustration": {
+                "type": "Image",
+                "config": {
+                  "label": "Feature Illustration",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            },
+            "repeat": {
+              "client_logo": {
+                "type": "Image",
+                "config": {
+                  "label": "Client logo",
+                  "constraint": {
+                    "width": 100,
+                    "height": 100
+                  },
+                  "thumbnails": []
+                }
+              },
+              "profile_pic": {
+                "type": "Image",
+                "config": {
+                  "label": "Profile Pic",
+                  "constraint": {
+                    "width": 80,
+                    "height": 80
+                  },
+                  "thumbnails": []
+                }
+              },
+              "quote": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Quote",
+                  "placeholder": "Lorem ipsum dolor sit amet, ....",
+                  "multi": "paragraph"
+                }
+              },
+              "name": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Name",
+                  "placeholder": "John McJohn",
+                  "single": "paragraph"
+                }
+              },
+              "role_position": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Role position",
+                  "placeholder": "Creative Director",
+                  "single": "paragraph"
+                }
+              }
+            }
+          },
+          "images_slider": {
+            "type": "Slice",
+            "fieldset": "Images Slider",
+            "description": "A slider of full-width images + description",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Full Width Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              }
+            }
+          },
+          "pricing_table": {
+            "type": "Slice",
+            "fieldset": "Pricing Table",
+            "description": "Display a list of pricing plans",
+            "icon": "attach_money",
+            "display": "grid",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow Headline",
+                  "placeholder": "Pricing plans",
+                  "single": "paragraph"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Choose the plan",
+                  "single": "heading2"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "Choose the version that works for you ...",
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true
+                }
+              }
+            },
+            "repeat": {
+              "plan_title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Plan title",
+                  "placeholder": "Simple, Gold, Premium...",
+                  "single": "heading3"
+                }
+              },
+              "price_option": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Price Option",
+                  "placeholder": "Free, $19, Contact us...",
+                  "multi": "heading4"
+                }
+              },
+              "features": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Features",
+                  "placeholder": "A list of features using bullet list",
+                  "multi": "list-item"
+                }
+              },
+              "call_to_action": {
+                "type": "Link",
+                "config": {
+                  "label": "Call To Action",
+                  "placeholder": "Link to Signup / More info...",
+                  "allowTargetBlank": true
+                }
+              },
+              "call_to_action_text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Call To Action Text",
+                  "placeholder": "Start your free trial",
+                  "multi": "paragraph"
+                }
+              }
+            }
+          },
+          "testimonials_slider": {
+            "type": "Slice",
+            "fieldset": "Testimonials Slider",
+            "description": "A predesigned Slider with rich testimonial",
+            "icon": "notifications_active",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6"
+                }
+              },
+              "paragraph": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Paragraph",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item"
+                }
+              },
+              "button_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link"
+                }
+              },
+              "button_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Label",
+                  "placeholder": "Text for button"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "testimonial": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "testimonial",
+                  "multi": "paragraph, preformatted, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item"
+                }
+              },
+              "person": {
+                "type": "Text",
+                "config": {
+                  "label": "person",
+                  "placeholder": "Their full name"
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "title",
+                  "placeholder": "Their title"
+                }
+              }
+            }
+          },
+          "video_highlights": {
+            "type": "Slice",
+            "fieldset": "Video Highlights",
+            "description": "Highlights of your video channel",
+            "icon": "ondemand_video",
+            "display": "list",
+            "non-repeat": {
+              "eyebrow_headline": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Eyebrow headline",
+                  "placeholder": "Reinforce your copy with a key-worded text, to be displayed before title",
+                  "single": "paragraph"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Video Highlights",
+                  "single": "heading2"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "These are some awesome videos ...",
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true
+                }
+              }
+            },
+            "repeat": {
+              "video_title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Video title",
+                  "placeholder": "My awesome video",
+                  "multi": "paragraph, strong"
+                }
+              },
+              "video_src": {
+                "type": "Embed",
+                "config": {
+                  "label": "Video src"
+                }
+              }
+            }
+          }
+        }
+      },
+      "fieldset": "Slice zone"
+    }
+  },
+  "SEO Metadata": {
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title",
+        "placeholder": "My title for Search Engine"
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description",
+        "placeholder": "The description that will appear in search engine"
+      }
+    },
+    "social_cards": {
+      "type": "Group",
+      "config": {
+        "label": "Social Cards - Facebook & Twitter",
+        "fields": {
+          "social_card_image": {
+            "type": "Image",
+            "config": {
+              "label": "Social Card Image",
+              "constraint": {},
+              "thumbnails": []
+            }
+          },
+          "social_card_title": {
+            "type": "Text",
+            "config": {
+              "label": "Social Card TItle"
+            }
+          },
+          "social_card_description": {
+            "type": "Text",
+            "config": {
+              "label": "Social card description"
+            }
+          }
+        }
+      }
+    }
+  }
+}

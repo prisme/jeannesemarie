@@ -1,5 +1,6 @@
 <template>
   <div class="jsm">
+    <slice-zone type="page" :uid="$route.params.uid" />
     <figure v-for="product in products" :key="product.id">
       <img
         :src="product.images[0].src"
@@ -12,7 +13,12 @@
 </template>
 
 <script>
+import SliceZone from 'vue-slicezone'
+
 export default {
+  components: {
+    SliceZone,
+  },
   async asyncData({ $shopify, params }) {
     const products = await $shopify.product.fetchAll()
     return { products }
