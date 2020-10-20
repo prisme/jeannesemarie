@@ -3,7 +3,7 @@ export default {
   target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'jeannesemarie',
+    title: 'jeanne se marie',
     meta: [{
       charset: 'utf-8'
     }, {

@@ -649,6 +649,30 @@
                 }
               }
             }
+          },
+          "homepage_introduction": {
+            "type": "Slice",
+            "fieldset": "HomepageIntroduction Template",
+            "description": "Template model for HomepageIntroduction",
+            "icon": "thumb_up",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "text",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl"
+                }
+              },
+              "illustration": {
+                "type": "Image",
+                "config": {
+                  "label": "illustration",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
           }
         }
       },
