@@ -47,7 +47,7 @@ export default {
   }], ["nuxt-sm"]],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    transpile: ["vue-slicezone", "nuxt-sm"]
+    transpile: ["vue-slicezone", "nuxt-sm", "nuxt-shopify"]
   },
   env: {
     SHOPIFY_DOMAIN: process.env.SHOPIFY_DOMAIN,
